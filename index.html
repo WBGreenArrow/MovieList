@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/GlobalStyle.css" />
+        <link rel="stylesheet" href="assets/css/classes.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Movie List</title>
+    </head>
+    <body>
+        <section class="container content-flex">
+            <div id="form-father" class="title-list content-flex">
+                <h1>Lista de filmes</h1>
+                <span id="btn-add-new-movie" class="content-flex" onclick="addNewMovie()">+</span>
+                <div id="form" class="form-container content-flex">
+                    <h2>Adicionar Novo Filme</h2>
+                    <div class="form-contant content-flex">
+                        <div>
+                            <p>Nome</p>
+                            <input id="name" type="text" />
+                        </div>
+                        <div>
+                            <p>Genêro</p>
+                            <input id="genre-movie" type="text" />
+                        </div>
+                        <div>
+                            <p>Image(URL)</p>
+                            <input id="img-url" type="text" />
+                        </div>
+                        <button onclick="addMovie()">Adicionar Filme</button>
+                    </div>
+                </div>
+            </div>
+            <div id="container-carder" class="container-movie content-flex"></div>
+        </section>
+    </body>
+    <script src="/index.js"></script>
+</html>
